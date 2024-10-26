@@ -4,7 +4,7 @@ namespace ParserScript
 {
     internal partial class ParserScript
     {
-        public static (string Result, bool IsMatch, string Error, string Process) Run(string path, string pparse)
+        public static (string Result, bool Success, string Error, string Process) Run(string path, string pparse)
         {
             try
             {
