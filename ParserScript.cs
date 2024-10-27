@@ -271,10 +271,10 @@ namespace ParserScript
                                 break;
                             case "clear":
                                 memory.Clear();
-                                memory.Add(("", true, ""));
+                                memory.Add(("", true, pparse));
                                 break;
                             case "parseresult":
-                                memory[^1] = (memory[^1].Value, memory[^1].IsMatch, memory[^1].Value);
+                               pparse = (memory[^1].Value, memory[^1].IsMatch, memory[^1].Value);
                                 break;
                             case "let":
                                 char type = Convert.ToChar(codes2[++j]);
