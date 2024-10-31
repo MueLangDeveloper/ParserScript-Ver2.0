@@ -240,7 +240,7 @@ namespace ParserScript
                                 break;
                             case "downpush":
                                 if (!memory[^1].IsMatch) break;
-                                memory[^2] = (memory[^2].Value + memory[^1].Value, memory[^1].IsMatch, memory[^1].Parse);
+                                memory[^2] = (memory[^2].Value + memory[^1].Value, memory[^2].IsMatch, memory[^1].Parse);
                                 memory.RemoveAt(memory.Count - 1);
                                 break;
                             case "set":
